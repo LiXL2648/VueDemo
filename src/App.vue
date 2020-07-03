@@ -1,86 +1,47 @@
 <template>
-  <div class="todo-container">
-    <div class="todo-wrap">
-      <!--<todo-header :addTodo="addTodo"/>-->
-      <!--<todo-header @addTodo="addTodo"/>-->
-      <todo-header ref="header"/>
-      <todo-list :todos="todos" :delTodo="delTodo"/>
-      <!--<todo-footer :todos="todos" :delCompleteTodos="delCompleteTodos" :selAllTodos="selAllTodos"/>-->
-      <todo-footer>
-        <input type="checkbox" v-model="isCheck" slot="isCheck"/>
-        <span slot="completeSize">已完成{{completeSize}}</span> / 全部{{todos.length}}
-        <button class="btn btn-danger" v-show="completeSize" @click="delCompleteTodos" slot="delCompleteTodos">清除已完成任务</button>
-      </todo-footer>
-    </div>
+  <div>
+    <div v-if="!repoUrl">Loading...</div>
+    <div v-else>The most popular repositories is <a :href="repoUrl">{{repoName}}</a></div>
   </div>
 </template>
 
 <script>
-  import TodoHeader from './components/TodoHeader.vue'
-  import TodoList from './components/TodoList.vue'
-  import TodoFooter from './components/TodoFooter.vue'
-  import LocalStorageUtil from './util/localStorageUtil'
-
-
+  import Axios from 'axios'
   export default {
     data() {
       return {
-//        todos: JSON.parse(window.localStorage.getItem('todos') || '[]')
-        todos: LocalStorageUtil.getTodos()
+        repoName: '',
+        repoUrl: ''
       }
     },
-    computed: {
-      completeSize() {
-        return this.todos.reduce((prevTotal, todo) => prevTotal + (todo.complete ? 1 : 0), 0)
-      },
-      isCheck: {
-        get() {
-          return this.completeSize === this.todos.length && this.completeSize > 0
+    mounted() {
+      const url = 'https://api.github.com/search/repositories?q=v&sort=stars'
+      /*this.$http.get(url).then(
+        respone => {
+          const result = respone.data
+          const repo = result.items[0]
+          this.repoName = repo.name
+          this.repoUrl = repo.html_url
         },
-        set(value) {
-          this.selAllTodos(value)
+        respone => {
+          alert('访问失败')
         }
-      }
-    },
-    methods: {
-      addTodo(todo) {
-        this.todos.unshift(todo)
-      },
-      delTodo(index) {
-        this.todos.splice(index, 1)
-      },
-      delCompleteTodos() {
-        this.todos = this.todos.filter(todo => !todo.complete)
-      },
-      selAllTodos(isCheck) {
-        this.todos.forEach(todo => todo.complete = isCheck)
-      }
-    },
-    mounted() {// 执行异步代码
-      // 给<todo-header/>绑定addTodo事件监听
-      this.$refs.header.$on('addTodo', this.addTodo)
-    },
-    watch: {
-      todos: {
-        deep: true,
-        handler: LocalStorageUtil.saveTodos
-      }
-    },
-    components: {
-      TodoHeader, TodoList, TodoFooter
+      )*/
+
+      Axios.get(url).then(
+        respone => {
+          const result = respone.data
+          const repo = result.items[0]
+          this.repoName = repo.name
+          this.repoUrl = repo.html_url
+        }
+      ).catch(error => {
+        alert('访问失败')
+      })
     }
   }
 </script>
 
 <style>
-  /*app*/
-  .todo-container {
-    width: 600px;
-    margin: 0 auto;
-  }
-  .todo-container .todo-wrap {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
+
 </style>
