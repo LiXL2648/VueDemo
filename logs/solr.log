@@ -1,0 +1,280 @@
+INFO  - 2020-06-30 14:48:54.839; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2020-06-30 14:48:54.882; org.apache.solr.core.SolrResourceLoader; Using JNDI solr.home: D:\WorkSpace\solr\solrHome
+INFO  - 2020-06-30 14:48:54.888; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'D:\WorkSpace\solr\solrHome\'
+INFO  - 2020-06-30 14:48:55.344; org.apache.solr.core.ConfigSolr; Loading container configuration from D:\WorkSpace\solr\solrHome\solr.xml
+INFO  - 2020-06-30 14:48:55.621; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: D:\WorkSpace\solr\solrHome
+INFO  - 2020-06-30 14:48:55.639; org.apache.solr.core.CoreContainer; New CoreContainer 1154583156
+INFO  - 2020-06-30 14:48:55.642; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=D:\WorkSpace\solr\solrHome\]
+INFO  - 2020-06-30 14:48:55.692; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2020-06-30 14:48:55.693; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2020-06-30 14:48:55.702; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2020-06-30 14:48:55.703; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2020-06-30 14:48:55.703; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2020-06-30 14:48:55.704; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2020-06-30 14:48:55.704; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2020-06-30 14:48:55.705; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2020-06-30 14:48:55.705; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2020-06-30 14:48:56.186; org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
+INFO  - 2020-06-30 14:48:56.191; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2020-06-30 14:48:56.193; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2020-06-30 14:48:56.196; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2020-06-30 14:48:56.304; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath D:\WorkSpace\solr\solrHome
+INFO  - 2020-06-30 14:48:56.333; org.apache.solr.core.CorePropertiesLocator; Found core collection1 in D:\WorkSpace\solr\solrHome\collection1\
+INFO  - 2020-06-30 14:48:56.335; org.apache.solr.core.CorePropertiesLocator; Found 1 core definitions
+INFO  - 2020-06-30 14:48:56.338; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'D:\WorkSpace\solr\solrHome\collection1\'
+INFO  - 2020-06-30 14:48:56.441; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+WARN  - 2020-06-30 14:48:56.444; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/extraction/lib (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\contrib\extraction\lib).
+WARN  - 2020-06-30 14:48:56.447; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\dist).
+WARN  - 2020-06-30 14:48:56.448; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/clustering/lib/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\contrib\clustering\lib).
+WARN  - 2020-06-30 14:48:56.454; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\dist).
+WARN  - 2020-06-30 14:48:56.455; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/langid/lib/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\contrib\langid\lib).
+WARN  - 2020-06-30 14:48:56.456; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\dist).
+WARN  - 2020-06-30 14:48:56.457; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/velocity/lib (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\contrib\velocity\lib).
+WARN  - 2020-06-30 14:48:56.458; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\dist).
+INFO  - 2020-06-30 14:48:56.524; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2020-06-30 14:48:56.536; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 4.10.3
+INFO  - 2020-06-30 14:48:56.752; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2020-06-30 14:48:56.771; org.apache.solr.schema.IndexSchema; Reading Solr Schema from D:\WorkSpace\solr\solrHome\collection1\conf\schema.xml
+INFO  - 2020-06-30 14:48:56.832; org.apache.solr.schema.IndexSchema; [collection1] Schema name=example
+INFO  - 2020-06-30 14:48:57.466; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2020-06-30 14:48:57.493; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+INFO  - 2020-06-30 14:48:57.496; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+INFO  - 2020-06-30 14:48:57.651; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2020-06-30 14:48:57.657; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2020-06-30 14:48:57.787; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using configuration from instancedir D:\WorkSpace\solr\solrHome\collection1\
+INFO  - 2020-06-30 14:48:57.846; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2020-06-30 14:48:57.866; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at D:\WorkSpace\solr\solrHome\collection1\, dataDir=D:\WorkSpace\solr\solrHome\collection1\data\
+INFO  - 2020-06-30 14:48:57.869; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@e73f9ac
+INFO  - 2020-06-30 14:48:57.929; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2020-06-30 14:48:57.929; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2020-06-30 14:48:57.969; org.apache.solr.core.CachingDirectoryFactory; return new directory for D:\WorkSpace\solr\solrHome\collection1\data
+INFO  - 2020-06-30 14:48:57.973; org.apache.solr.core.SolrCore; New index directory detected: old=null new=D:\WorkSpace\solr\solrHome\collection1\data\index/
+INFO  - 2020-06-30 14:48:57.976; org.apache.solr.core.CachingDirectoryFactory; return new directory for D:\WorkSpace\solr\solrHome\collection1\data\index
+INFO  - 2020-06-30 14:48:58.004; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2020-06-30 14:48:58.004; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2020-06-30 14:48:58.006; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2020-06-30 14:48:58.018; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2020-06-30 14:48:58.018; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2020-06-30 14:48:58.286; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2020-06-30 14:48:58.305; org.apache.solr.core.RequestHandlers; created /update: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2020-06-30 14:48:58.307; org.apache.solr.core.RequestHandlers; created /update/json: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2020-06-30 14:48:58.308; org.apache.solr.core.RequestHandlers; created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2020-06-30 14:48:58.309; org.apache.solr.core.RequestHandlers; created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2020-06-30 14:48:58.323; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2020-06-30 14:48:58.324; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2020-06-30 14:48:58.330; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2020-06-30 14:48:58.331; org.apache.solr.core.RequestHandlers; created /export: solr.SearchHandler
+INFO  - 2020-06-30 14:48:58.332; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+WARN  - 2020-06-30 14:48:58.337; org.apache.solr.core.RequestHandlers; Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2020-06-30 14:48:58.337; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2020-06-30 14:48:58.337; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2020-06-30 14:48:58.342; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2020-06-30 14:48:58.342; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2020-06-30 14:48:58.343; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2020-06-30 14:48:58.343; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2020-06-30 14:48:58.344; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2020-06-30 14:48:58.348; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2020-06-30 14:48:58.354; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2020-06-30 14:48:58.362; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2020-06-30 14:48:58.386; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2020-06-30 14:48:58.386; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2020-06-30 14:48:58.387; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2020-06-30 14:48:58.388; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2020-06-30 14:48:58.388; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2020-06-30 14:48:58.389; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2020-06-30 14:48:58.390; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2020-06-30 14:48:58.390; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2020-06-30 14:48:58.391; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2020-06-30 14:48:58.435; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2020-06-30 14:48:58.449; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2020-06-30 14:48:58.451; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2020-06-30 14:48:58.452; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2020-06-30 14:48:58.454; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2020-06-30 14:48:58.535; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2020-06-30 14:48:58.536; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2020-06-30 14:48:58.655; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@D:\WorkSpace\solr\solrHome\collection1\data\index lockFactory=NativeFSLockFactory@D:\WorkSpace\solr\solrHome\collection1\data\index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1b,generation=47}
+INFO  - 2020-06-30 14:48:58.657; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 47
+INFO  - 2020-06-30 14:48:58.724; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@75fe8a51[collection1] main
+INFO  - 2020-06-30 14:48:58.737; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:48:58.738; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=D:\WorkSpace\solr\solrHome\collection1\conf}
+INFO  - 2020-06-30 14:48:58.741; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:48:58.749; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:48:58.750; org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2020-06-30 14:48:58.751; org.apache.solr.rest.RestManager; Initializing 2 registered ManagedResources
+INFO  - 2020-06-30 14:48:58.752; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_stopwords_english.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:48:58.754; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:48:58.754; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+INFO  - 2020-06-30 14:48:58.755; org.apache.solr.rest.schema.analysis.ManagedWordSetResource; Loaded 35 words for /schema/analysis/stopwords/english
+INFO  - 2020-06-30 14:48:58.755; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/stopwords/english
+INFO  - 2020-06-30 14:48:58.756; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_synonyms_english.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:48:58.757; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:48:58.757; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+INFO  - 2020-06-30 14:48:58.759; org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager; Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+INFO  - 2020-06-30 14:48:58.766; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/synonyms/english
+INFO  - 2020-06-30 14:48:58.766; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2020-06-30 14:48:58.788; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2020-06-30 14:48:58.810; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2020-06-30 14:48:58.816; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: D:\WorkSpace\solr\solrHome\collection1\conf\elevate.xml
+INFO  - 2020-06-30 14:48:58.892; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2020-06-30 14:48:58.894; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@75fe8a51[collection1] main{StandardDirectoryReader(segments_1b:111:nrt _15(4.10.3):C2125 _16(4.10.3):C1 _17(4.10.3):C1)}
+INFO  - 2020-06-30 14:48:59.003; org.apache.solr.core.SolrCore; [collection1] webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=103 
+INFO  - 2020-06-30 14:48:59.005; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2020-06-30 14:48:59.005; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2020-06-30 14:48:59.006; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2020-06-30 14:48:59.008; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@75fe8a51[collection1] main{StandardDirectoryReader(segments_1b:111:nrt _15(4.10.3):C2125 _16(4.10.3):C1 _17(4.10.3):C1)}
+INFO  - 2020-06-30 14:48:59.012; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2020-06-30 14:48:59.015; org.apache.solr.servlet.SolrDispatchFilter; user.dir=D:\WorkSpace\WebStorm_Workspaces\VueDemo
+INFO  - 2020-06-30 14:48:59.015; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2020-06-30 14:49:17.998; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=1154583156
+INFO  - 2020-06-30 14:49:18.001; org.apache.solr.core.SolrCore; [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@5161290d
+INFO  - 2020-06-30 14:49:18.003; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=359109,transaction_logs_total_number=10}
+INFO  - 2020-06-30 14:49:18.004; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2020-06-30 14:49:18.004; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2020-06-30 14:49:18.004; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2020-06-30 14:49:18.023; org.apache.solr.core.SolrCore; [collection1] Closing main searcher on request.
+INFO  - 2020-06-30 14:49:18.033; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2020-06-30 14:49:18.034; org.apache.solr.core.CachingDirectoryFactory; looking to close D:\WorkSpace\solr\solrHome\collection1\data [CachedDir<<refCount=0;path=D:\WorkSpace\solr\solrHome\collection1\data;done=false>>]
+INFO  - 2020-06-30 14:49:18.034; org.apache.solr.core.CachingDirectoryFactory; Closing directory: D:\WorkSpace\solr\solrHome\collection1\data
+INFO  - 2020-06-30 14:49:18.035; org.apache.solr.core.CachingDirectoryFactory; looking to close D:\WorkSpace\solr\solrHome\collection1\data\index [CachedDir<<refCount=0;path=D:\WorkSpace\solr\solrHome\collection1\data\index;done=false>>]
+INFO  - 2020-06-30 14:49:18.037; org.apache.solr.core.CachingDirectoryFactory; Closing directory: D:\WorkSpace\solr\solrHome\collection1\data\index
+INFO  - 2020-06-30 14:51:40.081; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2020-06-30 14:51:40.114; org.apache.solr.core.SolrResourceLoader; Using JNDI solr.home: D:\WorkSpace\solr\solrHome
+INFO  - 2020-06-30 14:51:40.117; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'D:\WorkSpace\solr\solrHome\'
+INFO  - 2020-06-30 14:51:40.453; org.apache.solr.core.ConfigSolr; Loading container configuration from D:\WorkSpace\solr\solrHome\solr.xml
+INFO  - 2020-06-30 14:51:40.594; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: D:\WorkSpace\solr\solrHome
+INFO  - 2020-06-30 14:51:40.606; org.apache.solr.core.CoreContainer; New CoreContainer 260911071
+INFO  - 2020-06-30 14:51:40.606; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=D:\WorkSpace\solr\solrHome\]
+INFO  - 2020-06-30 14:51:40.650; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2020-06-30 14:51:40.651; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2020-06-30 14:51:40.658; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2020-06-30 14:51:40.659; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2020-06-30 14:51:40.660; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2020-06-30 14:51:40.660; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2020-06-30 14:51:40.661; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2020-06-30 14:51:40.662; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2020-06-30 14:51:40.662; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2020-06-30 14:51:41.052; org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
+INFO  - 2020-06-30 14:51:41.056; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2020-06-30 14:51:41.058; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2020-06-30 14:51:41.060; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2020-06-30 14:51:41.140; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath D:\WorkSpace\solr\solrHome
+INFO  - 2020-06-30 14:51:41.162; org.apache.solr.core.CorePropertiesLocator; Found core collection1 in D:\WorkSpace\solr\solrHome\collection1\
+INFO  - 2020-06-30 14:51:41.163; org.apache.solr.core.CorePropertiesLocator; Found 1 core definitions
+INFO  - 2020-06-30 14:51:41.166; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'D:\WorkSpace\solr\solrHome\collection1\'
+INFO  - 2020-06-30 14:51:41.266; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+WARN  - 2020-06-30 14:51:41.269; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/extraction/lib (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\contrib\extraction\lib).
+WARN  - 2020-06-30 14:51:41.270; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\dist).
+WARN  - 2020-06-30 14:51:41.271; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/clustering/lib/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\contrib\clustering\lib).
+WARN  - 2020-06-30 14:51:41.272; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\dist).
+WARN  - 2020-06-30 14:51:41.274; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/langid/lib/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\contrib\langid\lib).
+WARN  - 2020-06-30 14:51:41.275; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\dist).
+WARN  - 2020-06-30 14:51:41.280; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/velocity/lib (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\contrib\velocity\lib).
+WARN  - 2020-06-30 14:51:41.281; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: D:\WorkSpace\solr\solrHome\collection1\..\..\..\dist).
+INFO  - 2020-06-30 14:51:41.344; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2020-06-30 14:51:41.354; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 4.10.3
+INFO  - 2020-06-30 14:51:41.553; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2020-06-30 14:51:41.572; org.apache.solr.schema.IndexSchema; Reading Solr Schema from D:\WorkSpace\solr\solrHome\collection1\conf\schema.xml
+INFO  - 2020-06-30 14:51:41.635; org.apache.solr.schema.IndexSchema; [collection1] Schema name=example
+INFO  - 2020-06-30 14:51:42.213; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2020-06-30 14:51:42.245; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+INFO  - 2020-06-30 14:51:42.247; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+INFO  - 2020-06-30 14:51:42.402; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2020-06-30 14:51:42.407; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2020-06-30 14:51:42.527; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using configuration from instancedir D:\WorkSpace\solr\solrHome\collection1\
+INFO  - 2020-06-30 14:51:42.589; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2020-06-30 14:51:42.606; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at D:\WorkSpace\solr\solrHome\collection1\, dataDir=D:\WorkSpace\solr\solrHome\collection1\data\
+INFO  - 2020-06-30 14:51:42.609; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@61064425
+INFO  - 2020-06-30 14:51:42.669; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2020-06-30 14:51:42.669; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2020-06-30 14:51:42.702; org.apache.solr.core.CachingDirectoryFactory; return new directory for D:\WorkSpace\solr\solrHome\collection1\data
+INFO  - 2020-06-30 14:51:42.704; org.apache.solr.core.SolrCore; New index directory detected: old=null new=D:\WorkSpace\solr\solrHome\collection1\data\index/
+INFO  - 2020-06-30 14:51:42.706; org.apache.solr.core.CachingDirectoryFactory; return new directory for D:\WorkSpace\solr\solrHome\collection1\data\index
+INFO  - 2020-06-30 14:51:42.729; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2020-06-30 14:51:42.730; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2020-06-30 14:51:42.732; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2020-06-30 14:51:42.741; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2020-06-30 14:51:42.742; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2020-06-30 14:51:43.028; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2020-06-30 14:51:43.045; org.apache.solr.core.RequestHandlers; created /update: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2020-06-30 14:51:43.047; org.apache.solr.core.RequestHandlers; created /update/json: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2020-06-30 14:51:43.048; org.apache.solr.core.RequestHandlers; created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2020-06-30 14:51:43.048; org.apache.solr.core.RequestHandlers; created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2020-06-30 14:51:43.062; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2020-06-30 14:51:43.062; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2020-06-30 14:51:43.068; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2020-06-30 14:51:43.068; org.apache.solr.core.RequestHandlers; created /export: solr.SearchHandler
+INFO  - 2020-06-30 14:51:43.069; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+WARN  - 2020-06-30 14:51:43.074; org.apache.solr.core.RequestHandlers; Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2020-06-30 14:51:43.074; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2020-06-30 14:51:43.074; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2020-06-30 14:51:43.076; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2020-06-30 14:51:43.076; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2020-06-30 14:51:43.077; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2020-06-30 14:51:43.077; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2020-06-30 14:51:43.077; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2020-06-30 14:51:43.082; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2020-06-30 14:51:43.088; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2020-06-30 14:51:43.094; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2020-06-30 14:51:43.111; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2020-06-30 14:51:43.112; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2020-06-30 14:51:43.112; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2020-06-30 14:51:43.113; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2020-06-30 14:51:43.113; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2020-06-30 14:51:43.114; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2020-06-30 14:51:43.114; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2020-06-30 14:51:43.114; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2020-06-30 14:51:43.115; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2020-06-30 14:51:43.148; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2020-06-30 14:51:43.157; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2020-06-30 14:51:43.159; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2020-06-30 14:51:43.160; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2020-06-30 14:51:43.163; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2020-06-30 14:51:43.238; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2020-06-30 14:51:43.239; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2020-06-30 14:51:43.342; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@D:\WorkSpace\solr\solrHome\collection1\data\index lockFactory=NativeFSLockFactory@D:\WorkSpace\solr\solrHome\collection1\data\index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1b,generation=47}
+INFO  - 2020-06-30 14:51:43.344; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 47
+INFO  - 2020-06-30 14:51:43.402; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@11b51e14[collection1] main
+INFO  - 2020-06-30 14:51:43.416; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:51:43.416; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=D:\WorkSpace\solr\solrHome\collection1\conf}
+INFO  - 2020-06-30 14:51:43.419; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:51:43.426; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:51:43.427; org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2020-06-30 14:51:43.427; org.apache.solr.rest.RestManager; Initializing 2 registered ManagedResources
+INFO  - 2020-06-30 14:51:43.428; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_stopwords_english.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:51:43.431; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:51:43.431; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+INFO  - 2020-06-30 14:51:43.432; org.apache.solr.rest.schema.analysis.ManagedWordSetResource; Loaded 35 words for /schema/analysis/stopwords/english
+INFO  - 2020-06-30 14:51:43.433; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/stopwords/english
+INFO  - 2020-06-30 14:51:43.433; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_synonyms_english.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:51:43.434; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=D:\WorkSpace\solr\solrHome\collection1\conf
+INFO  - 2020-06-30 14:51:43.435; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+INFO  - 2020-06-30 14:51:43.436; org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager; Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+INFO  - 2020-06-30 14:51:43.442; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/synonyms/english
+INFO  - 2020-06-30 14:51:43.442; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2020-06-30 14:51:43.457; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2020-06-30 14:51:43.475; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2020-06-30 14:51:43.480; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: D:\WorkSpace\solr\solrHome\collection1\conf\elevate.xml
+INFO  - 2020-06-30 14:51:43.541; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2020-06-30 14:51:43.542; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@11b51e14[collection1] main{StandardDirectoryReader(segments_1b:111:nrt _15(4.10.3):C2125 _16(4.10.3):C1 _17(4.10.3):C1)}
+INFO  - 2020-06-30 14:51:43.672; org.apache.solr.core.SolrCore; [collection1] webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=124 
+INFO  - 2020-06-30 14:51:43.673; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2020-06-30 14:51:43.674; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2020-06-30 14:51:43.674; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2020-06-30 14:51:43.677; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@11b51e14[collection1] main{StandardDirectoryReader(segments_1b:111:nrt _15(4.10.3):C2125 _16(4.10.3):C1 _17(4.10.3):C1)}
+INFO  - 2020-06-30 14:51:43.682; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2020-06-30 14:51:43.685; org.apache.solr.servlet.SolrDispatchFilter; user.dir=D:\WorkSpace\WebStorm_Workspaces\VueDemo
+INFO  - 2020-06-30 14:51:43.686; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2020-06-30 14:53:15.874; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=260911071
+INFO  - 2020-06-30 14:53:15.875; org.apache.solr.core.SolrCore; [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@13353d8d
+INFO  - 2020-06-30 14:53:15.876; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=359109,transaction_logs_total_number=10}
+INFO  - 2020-06-30 14:53:15.877; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2020-06-30 14:53:15.877; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2020-06-30 14:53:15.878; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2020-06-30 14:53:15.898; org.apache.solr.core.SolrCore; [collection1] Closing main searcher on request.
+INFO  - 2020-06-30 14:53:15.909; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2020-06-30 14:53:15.910; org.apache.solr.core.CachingDirectoryFactory; looking to close D:\WorkSpace\solr\solrHome\collection1\data [CachedDir<<refCount=0;path=D:\WorkSpace\solr\solrHome\collection1\data;done=false>>]
+INFO  - 2020-06-30 14:53:15.910; org.apache.solr.core.CachingDirectoryFactory; Closing directory: D:\WorkSpace\solr\solrHome\collection1\data
+INFO  - 2020-06-30 14:53:15.912; org.apache.solr.core.CachingDirectoryFactory; looking to close D:\WorkSpace\solr\solrHome\collection1\data\index [CachedDir<<refCount=0;path=D:\WorkSpace\solr\solrHome\collection1\data\index;done=false>>]
+INFO  - 2020-06-30 14:53:15.912; org.apache.solr.core.CachingDirectoryFactory; Closing directory: D:\WorkSpace\solr\solrHome\collection1\data\index
