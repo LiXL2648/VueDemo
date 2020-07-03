@@ -19,10 +19,14 @@
   import TodoHeader from './components/TodoHeader.vue'
   import TodoList from './components/TodoList.vue'
   import TodoFooter from './components/TodoFooter.vue'
+  import LocalStorageUtil from './util/localStorageUtil'
+
+
   export default {
     data() {
       return {
-        todos: JSON.parse(window.localStorage.getItem('todos') || '[]')
+//        todos: JSON.parse(window.localStorage.getItem('todos') || '[]')
+        todos: LocalStorageUtil.getTodos()
       }
     },
     computed: {
@@ -59,9 +63,7 @@
     watch: {
       todos: {
         deep: true,
-        handler: function (value) {
-          window.localStorage.setItem('todos', JSON.stringify(value))
-        }
+        handler: LocalStorageUtil.saveTodos
       }
     },
     components: {
