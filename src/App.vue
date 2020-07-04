@@ -1,18 +1,14 @@
 <template>
-  <div class="container">
-    <search/>
-    <users-main/>
-  </div>
+  <mt-button type="primary" style="width: 100%" @click.native="handleClick">Test</mt-button>
 </template>
 
 <script>
-  import Search from './components/Search.vue'
-  import Main from './components/Main.vue'
-
+  import {Toast} from 'mint-ui'
   export default {
-    components: {
-      Search,
-      UsersMain:Main
+    methods: {
+      handleClick() {
+        Toast("Test")
+      }
     }
   }
 </script>
