@@ -3,8 +3,11 @@
     <ul>
       <li v-for="(message, index) in messageArr" :key="message.id">
         <router-link :to="`/home/message/detail/${message.id}`">{{message.title}}</router-link>
+        <button @click="pushShow(message.id)">push</button>
+        <button @click="replaceShow(message.id)">replace</button>
       </li>
     </ul>
+    <button @click="$router.back()">返回</button>
     <hr/>
     <router-view :messageArr="messageArr"></router-view>
   </div>
@@ -15,6 +18,14 @@
     data() {
       return {
         messageArr: []
+      }
+    },
+    methods: {
+      pushShow(id) {
+        this.$router.push(`/home/message/detail/${id}`)
+      },
+      replaceShow(id) {
+        this.$router.replace(`/home/message/detail/${id}`)
       }
     },
     mounted() {
