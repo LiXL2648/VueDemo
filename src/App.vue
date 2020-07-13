@@ -1,39 +1,38 @@
 <template>
-  <div>
-    <div class="row">
-      <div class="col-xs-offset-2 col-xs-8">
-        <div class="page-header"><h2>Router Test</h2></div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-2 col-xs-offset-2">
-        <div class="list-group">
-          <!--路由链接-->
-          <router-link to="/about" class="list-group-item">About</router-link>
-          <router-link to="/home" class="list-group-item">Home</router-link>
-        </div>
-      </div>
-      <div class="col-xs-6">
-        <div class="panel">
-          <div class="panel-body">
-            <!--路由视图-->
-            <keep-alive>
-              <router-view></router-view>
-            </keep-alive>
-          </div>
-        </div>
-      </div>
+  <div class="todo-container">
+    <div class="todo-wrap">
+      <todo-header/>
+      <todo-list/>
+     <todo-footer/>
     </div>
   </div>
 </template>
 
 <script>
-  export default {}
+  import TodoHeader from './components/TodoHeader.vue'
+  import TodoList from './components/TodoList.vue'
+  import TodoFooter from './components/TodoFooter.vue'
+  import LocalStorageUtil from './util/localStorageUtil'
+
+  export default {
+    mounted() {
+      this.$store.dispatch('getTodos')
+    },
+    components: {
+      TodoHeader, TodoList, TodoFooter
+    }
+  }
 </script>
 
 <style>
-  .router-link-active {
-    color: red !important;
+  /*app*/
+  .todo-container {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .todo-container .todo-wrap {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
   }
 </style>
